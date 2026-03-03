@@ -102,7 +102,7 @@ README.md
 ```
 
 ## Running Simulation
-Assuming iverilog and gtkwave have already been installed:
+Assuming iverilog and gtkwave have already been built:
 ```code
 git clone https://github.com/EruditeBoen/adaptive_hardware
 cd sim/
