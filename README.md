@@ -86,17 +86,17 @@ Footprints are small.
 
 ## Repository Structure
 ```code
+docs/
+  wave.png
+
 rtl/
   predictor.v
-
-tb/
-  tb_predictor.V
 
 sim/
   Makefile
 
-docs/
-  waveform.png
+tb/
+  tb_predictor.V
 
 README.md
 ```
