@@ -1,0 +1,6 @@
+# Simulation artifacts
+*.vcd
+sim/sim
+build/
+obj_dir/
+*.out
