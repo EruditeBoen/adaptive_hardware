@@ -108,7 +108,7 @@ git clone https://github.com/EruditeBoen/adaptive_hardware
 cd sim/
 make sim
 ```
-# Results
+### Results
 |   Workload   | Adaptive | Static | Last-Value |
 |   --------   | -------- | ------ | ---------- |
 |  Stationary  |  0.7820  | 0.8120 |   0.6960   |
