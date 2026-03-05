@@ -58,7 +58,7 @@ The 2-bit design introduces hysteresis (lag), requiring two consecutive opposing
 * Accuracy ≈ 50%
 * Demonstrates inability to capture the relationship between successive positions in a higher order
 
-![Alt text](docs/wave.png)
+![Alt text](docs/figures/wave.png)
 
 ## Comparison to Static Baselines
 The adaptive predictor must be compared against static policies:
