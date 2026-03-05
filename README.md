@@ -9,7 +9,7 @@ In this project, we will explore:
 * Limit-cycle behavior under conflicting patterns
 * Performance comparison against static prediction baselines
 
-This work is entirely in RTL with a testbench and waveform analysis.
+This work is entirely in RTL with a testbench, waveform analysis, accuracy counters, and CSV logging.
 
 ## Architecture
 ### State Encoding
