@@ -87,10 +87,16 @@ Footprints are small.
 ## Repository Structure
 ```code
 docs/
-  wave.png
+  figures/
+    wave.png
+  Phase1.md
+  Phase2.md
+
+results/
+  summary.csv
 
 rtl/
-  predictor.v
+  branch_predictors.v
 
 sim/
   Makefile
@@ -98,6 +104,7 @@ sim/
 tb/
   tb_predictor.V
 
+.gitignore
 README.md
 ```
 
