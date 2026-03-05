@@ -105,7 +105,7 @@ README.md
 Assuming iverilog and gtkwave have already been built:
 ```code
 git clone https://github.com/EruditeBoen/adaptive_hardware
-cd sim/
+cd adaptive_hardware/sim/
 make sim
 ```
 ### Results
