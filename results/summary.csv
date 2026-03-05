@@ -1,0 +1,4 @@
+Workload,Adaptive,Static,LastValue
+      Stationary,0.7820,0.8120,0.6960
+     RegimeShift,0.7670,0.5000,0.6860
+     Oscillatory,0.6000,0.5000,0.6000
