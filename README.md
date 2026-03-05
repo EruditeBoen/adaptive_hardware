@@ -15,12 +15,12 @@ This work is entirely in RTL with a testbench and waveform analysis.
 ### State Encoding
 The predictor maintains 2-bit internal confidence counter:
 
-| State | Meaning | Prediction |
-| --- | --- | --- |
-| 00 | Strongly predict 0 | 0 |
-| 01 | Weakly predict 0 | 0 |
-| 10 | Weakly predict 1 | 1 |
-| 11 | Strongly predict 1 | 1 |
+| State |       Meaning      | Prediction |
+| ----- |       -------      | ---------- |
+|  00   | Strongly predict 0 |     0      |
+|  01   | Weakly predict 0   |     0      |
+|  10   | Weakly predict 1   |     1      |
+|  11   | Strongly predict 1 |     1      |
 
 Prediction is combinational:
 ```verilog
@@ -108,6 +108,12 @@ git clone https://github.com/EruditeBoen/adaptive_hardware
 cd sim/
 make sim
 ```
+# Results
+|   Workload   | Adaptive | Static | Last-Value |
+|   --------   | -------- | ------ | ---------- |
+|  Stationary  |  0.7820  | 0.8120 |   0.6960   |
+| Regime Shift |  0.7670  | 0.5000 |   0.6860   |
+|  Oscillatory |  0.6000  | 0.5000 |   0.6000   |
 
 ## Future Work
 * Add a 1-bit predictor comparison
