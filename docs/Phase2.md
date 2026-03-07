@@ -74,7 +74,7 @@
 
 	*Static: exactly 50%*
 
-	*Last-Value: ~80%*
+	*Last-Value: ~60%*
 
 	*2-bit: ~60%*
 
@@ -87,3 +87,4 @@
 * *Adaptive wins for unpredictable regime shifts* 
 * *Adaptive and last-value nearly tie for higher order oscillatory patterns* 
 * *Adaptive loses for lower order oscillatory patterns*
+
