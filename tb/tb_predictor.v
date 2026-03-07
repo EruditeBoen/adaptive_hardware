@@ -116,7 +116,7 @@ module tb_predictor;
 
             rand_val = rand_val % 100;
 
-            x <= (rand_val < 80) ? 0 : 1;
+            x = (rand_val < 80) ? 0 : 1;
             count_cycle();
         end
 
@@ -142,7 +142,7 @@ module tb_predictor;
 
             rand_val = rand_val % 100;
 
-            x <= (rand_val < 80) ? 0 : 1;
+            x = (rand_val < 80) ? 0 : 1;
             count_cycle();
         end
 
@@ -154,7 +154,7 @@ module tb_predictor;
 
             rand_val = rand_val % 100;
 
-            x <= (rand_val < 80) ? 1 : 0;
+            x = (rand_val < 80) ? 1 : 0;
             count_cycle();
         end
 
@@ -173,12 +173,12 @@ module tb_predictor;
         repeat (50) begin
             repeat (5) begin
                 @(posedge clk);
-                x <= 1'b0;
+                x = 1'b0;
                 count_cycle();
             end
             repeat (5) begin
                 @(posedge clk);
-                x <= 1'b1;
+                x = 1'b1;
                 count_cycle();
             end
         end
@@ -217,4 +217,5 @@ module tb_predictor;
     end
 
 endmodule
+
 
