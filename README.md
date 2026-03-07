@@ -102,7 +102,7 @@ sim/
   Makefile
 
 tb/
-  tb_predictor.V
+  tb_predictor.v
 
 .gitignore
 README.md
