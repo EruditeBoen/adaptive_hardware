@@ -49,7 +49,7 @@ The 2-bit design introduces hysteresis (lag), requiring two consecutive opposing
 * Counter converges to 11
 * Prediction accuracy approaches 100%
 * Demonstrates rapid reinforcement and stability
-### 2. Station
+### 2. Stationary Bias (All 0s)
 * Counter converges to 00
 * Symmetric convergence behavior
 * Confirms correct decrement and saturation logic
@@ -112,8 +112,8 @@ README.md
 Assuming iverilog and gtkwave have already been built:
 ```code
 git clone https://github.com/EruditeBoen/adaptive_hardware
-cd adaptive_hardware/sim/
-make sim
+cd adaptive_hardware
+make regress
 ```
 ### Results
 |   Workload   | Adaptive | Static | Last-Value |
@@ -121,15 +121,6 @@ make sim
 |  Stationary  |  0.7820  | 0.8120 |   0.6960   |
 | Regime Shift |  0.7670  | 0.5000 |   0.6860   |
 |  Oscillatory |  0.6000  | 0.5000 |   0.6000   |
-
-## Verification Approach
-
-- PASS/FAIL: error counter and $fatal
-- Properties: reset determinism, legal state, correct transition
-- Coverage: state coverage and transition coverage
-- Self-checking TB with reference model (scoreboard)
-- Regression: `make regress` runs all workloads with fixed seeds
-- CI: GitHub Actions automatically runs regressions on push/PR
 
 ## Future Work
 * Add a 1-bit predictor comparison
