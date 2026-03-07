@@ -110,7 +110,7 @@ module tb_predictor;
         repeat (500) begin
             @(posedge clk);
 
-            rand_val = $random;
+            rand_val = $random(seed);
             if (rand_val < 0)
                 rand_val = -rand_val;
 
@@ -136,7 +136,7 @@ module tb_predictor;
 
         repeat (500) begin
             @(posedge clk);
-            rand_val = $random;
+            rand_val = $random(seed);
             if (rand_val < 0)
                 rand_val = -rand_val;
 
@@ -148,7 +148,7 @@ module tb_predictor;
 
         repeat (500) begin
             @(posedge clk);
-            rand_val = $random;
+            rand_val = $random(seed);
             if (rand_val < 0)
                 rand_val = -rand_val;
 
@@ -217,3 +217,4 @@ module tb_predictor;
     end
 
 endmodule
+
