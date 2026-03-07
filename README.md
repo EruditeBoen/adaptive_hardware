@@ -122,12 +122,12 @@ make sim
 | Regime Shift |  0.7670  | 0.5000 |   0.6860   |
 |  Oscillatory |  0.6000  | 0.5000 |   0.6000   |
 
-## Verification Apprach
+## Verification Approach
 
 - PASS/FAIL: error counter and $fatal
 - Properties: reset determinism, legal state, correct transition
 - Coverage: state coverage and transition coverage
-- Self-checking TB with ereference model (scoreboard)
+- Self-checking TB with reference model (scoreboard)
 - Regression: `make regress` runs all workloads with fixed seeds
 - CI: GitHub Actions automatically runs regressions on push/PR
 
